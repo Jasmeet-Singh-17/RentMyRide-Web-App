@@ -116,10 +116,6 @@ Simple 3-step process:
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## 📧 Contact
-
-For support or inquiries, please contact our 24/7 customer support team.
-
 ## 🙏 Acknowledgments
 
 - Bootstrap for the responsive framework

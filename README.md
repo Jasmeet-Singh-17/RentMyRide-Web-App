@@ -150,29 +150,7 @@ rentmyride/
 - Responsive grid layouts that adapt to screen sizes
 - Touch-optimized buttons and interactions
 - Optimized for iOS and Android devices
-
-### Search & Filter
-- Real-time vehicle search
-- Filter by vehicle type (Car, Bike, Scooter)
-- Filter by price range
-- Filter by fuel type (Petrol, Diesel, CNG, EV)
-- Location-based filtering
-
-### Booking Flow
-1. **Search** - Find your ideal vehicle
-2. **Select** - Choose rental duration
-3. **Book** - Complete secure payment
-4. **Ride** - Pick up and enjoy your ride
-
-## 🔒 Security Features
-
-- Secure user authentication
-- Protected API routes
-- Input validation and sanitization
-- XSS protection
-- CSRF token implementation
-
-
+  
 ---
 
 <div align="center">

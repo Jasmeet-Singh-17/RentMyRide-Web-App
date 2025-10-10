@@ -61,20 +61,6 @@ yarn start
 - **Icons**: Remix Icon
 - **Component Architecture**: Class-based React components
 
-## 📁 Project Structure
-
-```
-rentmyride/
-├── components/
-│   ├── NavbarTop.jsx
-│   ├── NavbarBottom.jsx
-│   ├── NavbarWrapper.jsx
-│   └── Footer.jsx
-├── pages/
-│   └── Index.jsx
-├── public/
-└── package.json
-```
 
 ## 🎨 Key Sections
 

@@ -7,10 +7,6 @@ A modern, mobile-first car sharing platform built with Next.js that makes vehicl
 ![React](https://img.shields.io/badge/React-18+-61DAFB)
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-5-7952B3)
 
-## 📸 Screenshots
-
-> Add screenshots of your application here to showcase the UI/UX
-
 ## ✨ Key Features
 
 ### 🎯 User Features
@@ -176,68 +172,6 @@ rentmyride/
 - XSS protection
 - CSRF token implementation
 
-## 🚦 Environment Variables
-
-Create a `.env.local` file in the root directory:
-
-```env
-NEXT_PUBLIC_API_URL=your_api_url
-NEXT_PUBLIC_MAPS_API_KEY=your_maps_api_key
-DATABASE_URL=your_database_url
-JWT_SECRET=your_jwt_secret
-```
-
-## 📱 Responsive Breakpoints
-
-| Device | Breakpoint |
-|--------|------------|
-| Mobile | < 768px |
-| Tablet | 768px - 991px |
-| Desktop | ≥ 992px |
-
-## 🎨 Custom Styling
-
-The project uses custom CSS with:
-- Smooth hover animations
-- Card elevation effects
-- Gradient backgrounds
-- Custom button styles
-- Mobile bottom navigation
-- Icon animations
-
-## 🤝 Contributing
-
-Contributions are welcome! Please follow these steps:
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-### Coding Standards
-- Use ES6+ syntax
-- Follow React best practices
-- Use PureComponent where applicable
-- Write clean, commented code
-- Test on multiple devices
-
-## 🐛 Known Issues
-
-- None currently reported
-
-## 📝 To-Do / Roadmap
-
-- [ ] Implement real-time booking system
-- [ ] Add payment gateway integration
-- [ ] Implement user reviews and ratings
-- [ ] Add vehicle comparison feature
-- [ ] Integrate Google Maps API
-- [ ] Add push notifications
-- [ ] Implement chat system for user-owner communication
-- [ ] Add vehicle insurance details
-- [ ] Multi-language support
-- [ ] Dark mode toggle
 
 ---
 

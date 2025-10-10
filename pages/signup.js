@@ -1,5 +1,5 @@
 import Footer from '@/components/Footer'
-import NavbarWrapper from '@/components/NavbarWrapper'
+import Header from '@/components/Header'
 import React, { PureComponent } from 'react'
 
 class Signup extends PureComponent {
@@ -14,7 +14,7 @@ class Signup extends PureComponent {
     render() {
         return (
             <>
-                <NavbarWrapper />
+                <Header />
 
                 <div className="container d-flex justify-content-center align-items-center min-vh-100">
                     <div

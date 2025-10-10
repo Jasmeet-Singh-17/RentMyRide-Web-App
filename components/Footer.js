@@ -1,4 +1,5 @@
 import React, { PureComponent } from 'react'
+import Link from 'next/link'
 
 class Footer extends PureComponent {
     constructor(props) {
@@ -12,6 +13,24 @@ class Footer extends PureComponent {
     render() {
         return (
             <>
+                {/* //Mobile Footer // */}
+                <div className='bottom-nav bg-body shadow-sm border-top fixed-bottom nav-visible'>
+                    <nav className="d-flex justify-content-around align-items-center d-md-none py-2">
+                        <Link href="/" className="nav-link text-center">
+                            <i className="ri-home-4-fill"></i> <br /> Home
+                        </Link>
+                        <Link href="/explore" className="nav-link text-center">
+                            <i className="ri-car-fill"></i> <br /> Explore
+                        </Link>
+                        <Link href="/profile" className="nav-link text-center">
+                            <i className="ri-user-3-fill"></i> <br /> Profile
+                        </Link>
+                        <Link href="/contact" className='nav-link text-center'>
+                            <i className="ri-customer-service-fill"></i><br /> Help
+                        </Link>
+                    </nav>
+                </div>
+
                 <footer className="d-none d-md-block bg-dark text-white pt-5 pb-3">
                     <div className="container">
                         <div className="row g-4 flex-row flex-wrap flex-lg-nowrap">

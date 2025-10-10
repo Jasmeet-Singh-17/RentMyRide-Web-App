@@ -1,13 +1,12 @@
 import Footer from '@/components/Footer';
-import NavbarWrapper from '@/components/NavbarWrapper';
+import Header from '@/components/Header';
 import React, { PureComponent } from 'react';
 
 class Login extends PureComponent {
     render() {
         return (
             <>
-                <NavbarWrapper />
-
+                <Header />
                 <div className="container d-flex justify-content-center align-items-center min-vh-100">
                     <div
                         className="card shadow-lg p-4 rounded-4"

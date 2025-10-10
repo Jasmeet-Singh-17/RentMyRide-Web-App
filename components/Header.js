@@ -20,19 +20,6 @@ class NavbarWrapper extends PureComponent {
                     </Link>
                 </nav>
 
-                {/* Mobile Bottom Navbar */}
-                <nav className="navbar fixed-bottom navbar-light bg-light border-top d-flex justify-content-around d-md-none">
-                    <Link href="/" className="nav-link text-center">
-                        <i className="ri-home-4-fill"></i> <br /> Home
-                    </Link>
-                    <Link href="/explore" className="nav-link text-center">
-                        <i className="ri-car-fill"></i> <br /> Explore
-                    </Link>
-                    <Link href="/profile" className="nav-link text-center">
-                        <i className="ri-user-3-fill"></i> <br /> Profile
-                    </Link>
-                </nav>
-
                 {/* Desktop / Tablet Navbar */}
                 <nav className="navbar navbar-expand-md navbar-light bg-warning d-flex justify-content-center">
                     <div className="container">

@@ -17,9 +17,9 @@ class VehicleCard extends PureComponent {
                                     <p className="card-text mb-1"><strong>Location:</strong> {v.location}</p>
                                     {v.seats && <p className="card-text mb-1">Seats: {v.seats}</p>}
                                     {v.fuel && <p className="card-text mb-0">Fuel: {v.fuel}</p>}
-                                    <div className="d-flex gap-2 mt-2">
-                                        <button className="btn btn-success">Rent Now</button>
-                                        <button className="btn btn-warning">Check Availability</button>
+                                    <div className="d-flex flex-column  gap-2">
+                                        <button className="btn btn-success w-100">Rent Now</button>
+                                        <button className="btn btn-warning w-100">Check Availability</button>
                                     </div>
                                 </div>
                             </div>

@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react';
 import Footer from '@/components/Footer';
-import NavbarWrapper from '@/components/NavbarWrapper';
+import NavbarWrapper from '@/components/Header';
 
 class Contact extends PureComponent {
     constructor(props) {

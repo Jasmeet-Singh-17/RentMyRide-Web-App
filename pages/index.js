@@ -1,7 +1,5 @@
 import React, { PureComponent } from 'react'
-import NavbarBottom from '@/components/NavbarBottom'
-import NavbarTop from '@/components/NavbarTop'
-import NavbarWrapper from '@/components/NavbarWrapper'
+import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 class Index extends PureComponent {
   constructor(props) {
@@ -15,7 +13,7 @@ class Index extends PureComponent {
   render() {
     return (
       <>
-        <NavbarWrapper />
+        <Header />
 
         <section
           className="d-flex align-items-center justify-content-center"

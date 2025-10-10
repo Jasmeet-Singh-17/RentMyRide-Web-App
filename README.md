@@ -113,45 +113,7 @@ rentmyride/
 └── package.json               # Project dependencies
 ```
 
-## 🎨 Key Pages & Components
 
-### Homepage (`/`)
-- Eye-catching hero section with gradient background
-- Feature showcase with 6 key platform features
-- Services overview with 6 core service offerings
-- 3-step rental process explanation
-
-### Explore Page (`/explore`)
-- Vehicle search functionality
-- Filter options (vehicle type, rate, fuel type)
-- Grid display of available vehicles
-- Vehicle cards with detailed information
-
-### Contact Page (`/contact`)
-- Contact form with validation
-- Service selection dropdown
-- Vehicle type radio buttons
-- Message textarea
-
-### User Authentication
-- **Login Page** - Email and password authentication
-- **Signup Page** - New user registration with form validation
-
-### Profile Page
-- User profile overview
-- Order history access
-- Settings management
-- Login prompt for unauthenticated users
-
-## 🎯 Features Breakdown
-
-### Mobile-First Design
-- Fixed bottom navigation bar for mobile devices
-- Responsive grid layouts that adapt to screen sizes
-- Touch-optimized buttons and interactions
-- Optimized for iOS and Android devices
-  
----
 
 <div align="center">
   Made with ❤️ by the RentMyRide Team

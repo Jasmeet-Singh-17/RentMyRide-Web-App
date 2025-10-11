@@ -1,6 +1,7 @@
 import React, { PureComponent } from 'react'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
+
 class Index extends PureComponent {
   constructor(props) {
     super(props)
@@ -55,7 +56,7 @@ class Index extends PureComponent {
             <div className="row g-4">
 
               <div className="col-md-6 col-lg-4">
-                <div className="card h-100 rounded-4 p-4 hover-effect" style={{ background: 'linear-gradient(135deg, #ffffff, #f2f2f2)' }}>
+                <div className="card h-100 rounded-4 p-4" style={{ background: 'linear-gradient(135deg, #ffffff, #f2f2f2)', cursor: 'pointer' }}>
                   <div className="card-body text-center">
                     <i className="ri-car-fill fs-1 text-dark mb-3"></i>
                     <h5 className="card-title fw-bold">User-Friendly Booking</h5>
@@ -67,7 +68,7 @@ class Index extends PureComponent {
               </div>
 
               <div className="col-md-6 col-lg-4">
-                <div className="card h-100 rounded-4 p-4 hover-effect" style={{ background: 'linear-gradient(135deg, #ffffff, #f0f0f0)' }}>
+                <div className="card h-100 rounded-4 p-4" style={{ background: 'linear-gradient(135deg, #ffffff, #f0f0f0)', cursor: 'pointer' }}>
                   <div className="card-body text-center">
                     <i className="ri-user-3-fill fs-1 text-dark mb-3"></i>
                     <h5 className="card-title fw-bold">Direct Owner Contact</h5>
@@ -79,7 +80,7 @@ class Index extends PureComponent {
               </div>
 
               <div className="col-md-6 col-lg-4">
-                <div className="card h-100 rounded-4 p-4 hover-effect" style={{ background: 'linear-gradient(135deg, #ffffff, #f0f0f0)' }}>
+                <div className="card h-100 rounded-4 p-4 " style={{ background: 'linear-gradient(135deg, #ffffff, #f0f0f0)', cursor: 'pointer' }}>
                   <div className="card-body text-center">
                     <i className="ri-map-pin-2-fill fs-1 text-dark mb-3"></i>
                     <h5 className="card-title fw-bold">Convenience Features</h5>
@@ -91,7 +92,7 @@ class Index extends PureComponent {
               </div>
 
               <div className="col-md-6 col-lg-4">
-                <div className="card h-100 rounded-4 p-4 hover-effect" style={{ background: 'linear-gradient(135deg, #ffffff, #f9f9f9)' }}>
+                <div className="card h-100 rounded-4 p-4 " style={{ background: 'linear-gradient(135deg, #ffffff, #f9f9f9)', cursor: 'pointer' }}>
                   <div className="card-body text-center">
                     <i className="ri-dashboard-fill fs-1 text-dark mb-3"></i>
                     <h5 className="card-title fw-bold">Admin / Owner Features</h5>
@@ -103,7 +104,7 @@ class Index extends PureComponent {
               </div>
 
               <div className="col-md-6 col-lg-4">
-                <div className="card h-100 rounded-4 p-4 hover-effect" style={{ background: 'linear-gradient(135deg, #ffffff, #f4f4f4)' }}>
+                <div className="card h-100 rounded-4 p-4 " style={{ background: 'linear-gradient(135deg, #ffffff, #f4f4f4)', cursor: 'pointer' }}>
                   <div className="card-body text-center">
                     <i className="ri-customer-service-2-line fs-1 text-dark mb-3"></i>
                     <h5 className="card-title fw-bold">24/7 Customer Support</h5>
@@ -115,8 +116,8 @@ class Index extends PureComponent {
               </div>
 
               <div className="col-md-6 col-lg-4">
-                <div className="card h-100 rounded-4 p-4 hover-effect" style={{ background: 'linear-gradient(135deg, #ffffff, #e6e6e6)' }}>
-                  <div className="card-body text-center">
+                <div className="card h-100 rounded-4 p-4" style={{ background: 'linear-gradient(135deg, #ffffff, #e6e6e6)', cursor: 'pointer' }}>
+                  <div className="card-body text-center ">
                     <i className="ri-discount-percent-line fs-1 text-dark mb-3"></i>
                     <h5 className="card-title fw-bold">Huge Discounts</h5>
                     <p className="card-text">
@@ -137,7 +138,7 @@ class Index extends PureComponent {
             <div className="row g-4">
 
               <div className="col-md-6 col-lg-4">
-                <div className="service-card h-100 p-4 text-center hover-service">
+                <div className="service-card h-100 p-4 text-center ">
                   <div className="icon-circle mb-3">
                     <i className="ri-roadster-fill fs-1 text-white"></i>
                   </div>
@@ -149,7 +150,7 @@ class Index extends PureComponent {
               </div>
 
               <div className="col-md-6 col-lg-4">
-                <div className="service-card h-100 p-4 text-center hover-service">
+                <div className="service-card h-100 p-4 text-center ">
                   <div className="icon-circle mb-3" style={{ backgroundColor: '#28a745' }}>
                     <i className="ri-map-pin-2-fill fs-1 text-white"></i>
                   </div>
@@ -161,7 +162,7 @@ class Index extends PureComponent {
               </div>
 
               <div className="col-md-6 col-lg-4">
-                <div className="service-card h-100 p-4 text-center hover-service">
+                <div className="service-card h-100 p-4 text-center ">
                   <div className="icon-circle mb-3" style={{ backgroundColor: '#007bff' }}>
                     <i className="ri-smartphone-fill fs-1 text-white"></i>
                   </div>
@@ -173,7 +174,7 @@ class Index extends PureComponent {
               </div>
 
               <div className="col-md-6 col-lg-4">
-                <div className="service-card h-100 p-4 text-center hover-service">
+                <div className="service-card h-100 p-4 text-center">
                   <div className="icon-circle mb-3" style={{ backgroundColor: '#ffc107' }}>
                     <i className="ri-shield-check-fill fs-1 text-white"></i>
                   </div>
@@ -185,7 +186,7 @@ class Index extends PureComponent {
               </div>
 
               <div className="col-md-6 col-lg-4">
-                <div className="service-card h-100 p-4 text-center hover-service">
+                <div className="service-card h-100 p-4 text-center">
                   <div className="icon-circle mb-3" style={{ backgroundColor: '#17a2b8' }}>
                     <i className="ri-customer-service-2-line fs-1 text-white"></i>
                   </div>
@@ -197,7 +198,7 @@ class Index extends PureComponent {
               </div>
 
               <div className="col-md-6 col-lg-4">
-                <div className="service-card h-100 p-4 text-center hover-service">
+                <div className="service-card h-100 p-4 text-center ">
                   <div className="icon-circle mb-3" style={{ backgroundColor: '#6c757d' }}>
                     <i className="ri-secure-payment-fill fs-1 text-white"></i>
                   </div>

@@ -1,4 +1,5 @@
 import React, { PureComponent } from 'react'
+import { ListFilter, Search } from 'lucide-react';
 import Link from 'next/link'
 
 class Footer extends PureComponent {
@@ -14,10 +15,13 @@ class Footer extends PureComponent {
         return (
             <>
                 {/* //Mobile Footer // */}
-                <div className='bottom-nav bg-body shadow-sm border-top fixed-bottom nav-visible'>
+                <div className='bottom-nav bg-body border-top fixed-bottom '>
                     <nav className="d-flex justify-content-around align-items-center d-md-none py-2">
                         <Link href="/" className="nav-link text-center">
                             <i className="ri-home-4-fill"></i> <br /> Home
+                        </Link>
+                        <Link href="/search" className='nav-link text-center'>
+                            <Search className="text-muted" /><br /> Search
                         </Link>
                         <Link href="/explore" className="nav-link text-center">
                             <i className="ri-car-fill"></i> <br /> Explore

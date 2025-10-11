@@ -9,7 +9,7 @@ class Login extends PureComponent {
                 <Header />
                 <div className="container d-flex justify-content-center align-items-center min-vh-100">
                     <div
-                        className="card shadow-lg p-4 rounded-4"
+                        className="card p-4 rounded-4"
                         style={{
                             maxWidth: '400px',
                             width: '100%',

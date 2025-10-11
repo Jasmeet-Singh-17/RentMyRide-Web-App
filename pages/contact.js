@@ -17,7 +17,7 @@ class Contact extends PureComponent {
                 <NavbarWrapper />
 
                 <div className="container my-5">
-                    <div className="card shadow-lg p-4 rounded-4" style={{ backgroundColor: 'rgba(255, 255, 224, 0.95)' }}>
+                    <div className="card p-4 rounded-4" style={{ backgroundColor: 'rgba(255, 255, 224, 0.95)' }}>
                         <h2 className="text-center mb-4 fw-bold text-warning">Contact Us</h2>
                         <form>
                             <div className="mb-3">

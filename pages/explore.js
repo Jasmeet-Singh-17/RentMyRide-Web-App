@@ -26,20 +26,20 @@ class Explore extends PureComponent {
         return (
             <>
                 <section className="text-center bg-warning text-black p-2 fixed-top position-sticky ">
-                    <div className="container">
+                    <div>
                         <div className="d-flex align-items-center justify-content-between flex-wrap">
                             <button
                                 onClick={this.handleBack}
                                 className="btn btn-link text-dark d-flex align-items-center text-decoration-none fs-5 bg-warning"
                             >
-                                <i className="ri-arrow-left-line fs-4 me-2"></i>
+                                <i className="ri-arrow-left-line fs-4 me-"></i>
                                 Explore
                             </button>
-                            <div className="d-flex align-items-center gap-3">
+                            <div className="d-flex justify-content-evenly align-items-center m-1">
                                 <button
                                     onClick={this.handleSearchClick} className='btn btn-link bg-warning border-none text-dark'
                                 >
-                                    <SearchIcon size={24} className='cursor-pointer' />
+                                    <SearchIcon size={28} className='cursor-pointer' />
                                 </button>
                                 <button className="btn btn-dark"
                                     type="button"

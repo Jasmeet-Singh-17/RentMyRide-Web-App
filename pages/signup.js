@@ -1,5 +1,3 @@
-import Footer from '@/components/Footer'
-import Header from '@/components/Header'
 import React, { PureComponent } from 'react'
 
 class Signup extends PureComponent {
@@ -14,9 +12,7 @@ class Signup extends PureComponent {
     render() {
         return (
             <>
-                <Header />
-
-                <div className="container d-flex justify-content-center align-items-center min-vh-100">
+                <div className="container d-flex flex-column justify-content-center align-items-center vh-100">
                     <div
                         className="card p-4 rounded-4"
                         style={{
@@ -94,9 +90,28 @@ class Signup extends PureComponent {
                             </p>
                         </form>
                     </div>
-                </div>
-                <Footer />
+                    {/* Divider */}
+                    <hr
+                        className="mx-auto my-4"
+                        style={{ width: '90%', borderTop: '1px solid #ccc' }}
+                    />
 
+                    {/* Footer Links */}
+                    <div className="d-flex justify-content-center flex-wrap gap-3 text-center">
+                        <a href="#" className="text-decoration-none text-dark small">
+                            Return Policy
+                        </a>
+                        <a href="#" className="text-decoration-none text-dark small">
+                            Terms of Use
+                        </a>
+                        <a href="#" className="text-decoration-none text-dark small">
+                            Services
+                        </a>
+                        <a href="#" className="text-decoration-none text-dark small">
+                            Privacy
+                        </a>
+                    </div>
+                </div>
             </>
 
         )

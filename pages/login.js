@@ -1,15 +1,16 @@
-import Footer from '@/components/Footer';
-import Header from '@/components/Header';
 import React, { PureComponent } from 'react';
 
 class Login extends PureComponent {
     render() {
         return (
             <>
-                <Header />
-                <div className="container d-flex justify-content-center align-items-center min-vh-100">
+                <div
+                    className="container d-flex flex-column justify-content-center align-items-center vh-100"
+                    style={{ backgroundColor: '#f8f9fa' }}
+                >
+                    {/* Login Card */}
                     <div
-                        className="card p-4 rounded-4"
+                        className="card p-4 rounded-4 "
                         style={{
                             maxWidth: '400px',
                             width: '100%',
@@ -53,14 +54,35 @@ class Login extends PureComponent {
 
                             <p className="text-center mt-3 text-muted">
                                 Don't have an account?{' '}
-                                <a href="/signup" className="text-warning fw-bold">
+                                <a href="/signup" className="text-warning fw-bold text-decoration-none">
                                     Sign Up
                                 </a>
                             </p>
                         </form>
                     </div>
+
+                    {/* Divider */}
+                    <hr
+                        className="mx-auto my-4"
+                        style={{ width: '90%', borderTop: '1px solid #ccc' }}
+                    />
+
+                    {/* Footer Links */}
+                    <div className="d-flex justify-content-center flex-wrap gap-3 text-center">
+                        <a href="#" className="text-decoration-none text-dark small">
+                            Return Policy
+                        </a>
+                        <a href="#" className="text-decoration-none text-dark small">
+                            Terms of Use
+                        </a>
+                        <a href="#" className="text-decoration-none text-dark small">
+                            Services
+                        </a>
+                        <a href="#" className="text-decoration-none text-dark small">
+                            Privacy
+                        </a>
+                    </div>
                 </div>
-                <Footer />
             </>
         );
     }

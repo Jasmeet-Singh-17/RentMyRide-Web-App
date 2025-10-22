@@ -1,6 +1,8 @@
 import React, { PureComponent } from 'react'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
+import BrandCard from '@/components/BrandCard'
+import brands from '@/data/brands'
 
 class Index extends PureComponent {
   constructor(props) {
@@ -131,10 +133,26 @@ class Index extends PureComponent {
           </div>
         </section>
 
-        {/* //Services */}
-        <section className='py-5' style={{ backgroundColor: '#f9fafb' }}>
+        <section className="py-5" >
           <div className="container">
-            <h1 className='text-center mb-5 fw-bold'>Our Services</h1>
+            <h1 className="text-center mb-4 fw-bold">Top Brands</h1>
+            <div className="row g-4 justify-content-center">
+
+              {brands.map((brand) => (
+                <div className="col-4 d-flex justify-content-center">
+                  <BrandCard brand={brand} />
+                </div>
+              ))}
+
+            </div>
+          </div>
+        </section>
+
+        {/* //Services */}
+        < section className='py-5' style={{ backgroundColor: '#f9fafb' }
+        }>
+          <div className="container">
+            <h1 className='text-center mb-4 fw-bold'>Our Services</h1>
             <div className="row g-4">
 
               <div className="col-md-6 col-lg-4">
@@ -211,7 +229,7 @@ class Index extends PureComponent {
 
             </div>
           </div>
-        </section>
+        </section >
 
 
         <section className='py-5 mb-3'>
@@ -219,7 +237,7 @@ class Index extends PureComponent {
 
             <h1 className='text-center mb-5 fw-bold'>Renting Made Easy with 3 Easy Steps</h1>
 
-            <div className='bg-dark p-4 rounded-4'>
+            <div className='bg-dark p-4 rounded-4 my-4'>
 
               <div className="row g-4 justify-content-center">
 

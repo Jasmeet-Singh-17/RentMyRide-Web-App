@@ -25,14 +25,14 @@ class Explore extends PureComponent {
     render() {
         return (
             <>
-                <section className="text-center bg-warning text-black p-2 fixed-top position-sticky ">
+                <section className="text-center bg-warning text-black p-2 sticky ">
                     <div>
                         <div className="d-flex align-items-center justify-content-between flex-wrap">
                             <button
                                 onClick={this.handleBack}
                                 className="btn btn-link text-dark d-flex align-items-center text-decoration-none fs-5 bg-warning"
                             >
-                                <i className="ri-arrow-left-line fs-4 me-"></i>
+                                <i className="ri-arrow-left-line fs-4 me-2"></i>
                                 Explore
                             </button>
                             <div className="d-flex justify-content-evenly align-items-center m-1">
@@ -99,16 +99,17 @@ class Explore extends PureComponent {
                 </section>
 
 
-                <section className="d-flex bg-warning text-center p-4 d-md-none border-top border-light m-2 rounded-pill ">
-                    <h1 className="text-light m-auto">
+                <section className="container mt-4 mb-5">
+                    <h1 className="text-dark text-center fs-4 d-md-none mb-2">
                         Explore Your Favourite Vehicle to Rent
                     </h1>
-                </section>
+                    <h5 className="text-center text-muted mb-3">
+                        Vehicles Available: {vehicles.length}
+                    </h5>
 
-                < section className='p-1 m-auto' >
-                    <h2 className='text-center mt-1'> Vehicles Available: {vehicles.length} </h2>
-                    <VehicleCard vehicles={vehicles} />
-
+                    <div className="row cols-1 g-3">
+                        <VehicleCard vehicles={vehicles} />
+                    </div>
                 </section >
 
                 <Footer />

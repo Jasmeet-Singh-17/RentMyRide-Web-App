@@ -7,7 +7,7 @@ const vehicles = [
         location: "Delhi, India",
         seats: 5,
         fuel: "Petrol",
-        image: "https://images.unsplash.com/photo-1608889170146-82c1e2f47f4f?auto=format&fit=crop&w=800&q=80"
+        src: "https://images.pexels.com/photos/1007410/pexels-photo-1007410.jpeg?auto=compress&cs=tinysrgb&w=800"
     },
     {
         id: 2,
@@ -17,7 +17,7 @@ const vehicles = [
         location: "Mumbai, India",
         seats: 2,
         fuel: "Petrol",
-        image: "https://images.unsplash.com/photo-1616321578620-0a3bcb9d21d2?auto=format&fit=crop&w=800&q=80"
+        src: "https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&w=800"
     },
     {
         id: 3,
@@ -27,7 +27,7 @@ const vehicles = [
         location: "Bangalore, India",
         seats: 2,
         fuel: "Petrol",
-        image: "https://images.unsplash.com/photo-1618401474249-67d88c8f0e9d?auto=format&fit=crop&w=800&q=80"
+        src: "https://images.pexels.com/photos/100582/pexels-photo-100582.jpeg?auto=compress&cs=tinysrgb&w=800"
     },
     {
         id: 4,
@@ -37,7 +37,7 @@ const vehicles = [
         location: "Chennai, India",
         seats: 7,
         fuel: "Diesel",
-        image: "https://images.unsplash.com/photo-1603075017347-9f30a8f9d3ab?auto=format&fit=crop&w=800&q=80"
+        src: "https://images.pexels.com/photos/358070/pexels-photo-358070.jpeg?auto=compress&cs=tinysrgb&w=800"
     },
     {
         id: 5,
@@ -47,7 +47,7 @@ const vehicles = [
         location: "Pune, India",
         seats: 2,
         fuel: "Petrol",
-        image: "https://images.unsplash.com/photo-1618401474140-5c2d3f7b3b7f?auto=format&fit=crop&w=800&q=80"
+        src: "https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&w=800"
     },
     {
         id: 6,
@@ -57,7 +57,7 @@ const vehicles = [
         location: "Hyderabad, India",
         seats: 2,
         fuel: "Petrol",
-        image: "https://images.unsplash.com/photo-1618382908411-33e46e3d11da?auto=format&fit=crop&w=800&q=80"
+        src: "https://images.pexels.com/photos/1213293/pexels-photo-1213293.jpeg?auto=compress&cs=tinysrgb&w=800"
     },
     {
         id: 7,
@@ -67,7 +67,7 @@ const vehicles = [
         location: "Delhi, India",
         seats: 5,
         fuel: "Petrol",
-        image: "https://images.unsplash.com/photo-1616628187637-86e2a88b8b3d?auto=format&fit=crop&w=800&q=80"
+        src: "https://images.pexels.com/photos/3580701/pexels-photo-3580701.jpeg?auto=compress&cs=tinysrgb&w=800"
     },
     {
         id: 8,
@@ -77,7 +77,7 @@ const vehicles = [
         location: "Mumbai, India",
         seats: 5,
         fuel: "Diesel",
-        image: "https://images.unsplash.com/photo-1617551223291-5f8f2a2b9d1f?auto=format&fit=crop&w=800&q=80"
+        src: "https://images.pexels.com/photos/3580702/pexels-photo-3580702.jpeg?auto=compress&cs=tinysrgb&w=800"
     },
     {
         id: 9,
@@ -87,7 +87,7 @@ const vehicles = [
         location: "Bangalore, India",
         seats: 5,
         fuel: "Petrol",
-        image: "https://images.unsplash.com/photo-1608889170200-03f3f5c4a8b6?auto=format&fit=crop&w=800&q=80"
+        src: "https://images.pexels.com/photos/3580704/pexels-photo-3580704.jpeg?auto=compress&cs=tinysrgb&w=800"
     }
 ];
 

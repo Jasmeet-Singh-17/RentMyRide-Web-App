@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Image from "next/image";
 
 const VehicleCard = ({ vehicles }) => {
     const [selectedVehicle, setSelectedVehicle] = useState(null);
@@ -23,13 +24,22 @@ const VehicleCard = ({ vehicles }) => {
                             onClick={() => openModal(v)}
                             style={{ cursor: "pointer" }}
                         >
-                            <div className="card rounded-4 shadow-sm">
-                                <div className="card-body d-flex justify-content-between">
-                                    <div>
-                                        <h5 className="card-title mb-1">{v.name}</h5>
-                                        <p className="card-text text-muted small mb-0">
-                                            <strong>Type:</strong> {v.type}
-                                        </p>
+                            <div className="card rounded-4">
+                                <div className="card-body d-flex align-items-center justify-content-between ">
+                                    <div className="d-flex justify-content-center gap-3">
+                                        <Image
+                                            src={v.src}
+                                            alt={v.name}
+                                            width={50}
+                                            height={50}
+                                            className="rounded-circle"
+                                        />
+                                        <div>
+                                            <h5 className="card-title mb-1 fw-semibold">{v.name}</h5>
+                                            <p className="card-text text-muted mb-0">
+                                                <strong>Type: </strong> {v.type}
+                                            </p>
+                                        </div>
                                     </div>
                                     <i className="ri-bookmark-3-fill fs-5 text-warning"></i>
                                 </div>

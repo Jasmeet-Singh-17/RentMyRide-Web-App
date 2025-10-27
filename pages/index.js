@@ -3,6 +3,11 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import BrandCard from '@/components/BrandCard'
 import brands from '@/data/brands'
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination } from "swiper/modules";
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
 class Index extends PureComponent {
   constructor(props) {
@@ -21,7 +26,7 @@ class Index extends PureComponent {
         <section
           className="d-flex align-items-center justify-content-center"
           style={{
-            minHeight: '80vh',
+            minHeight: '60vh',
             background: 'linear-gradient(135deg, #FFD700 0%, #FFB347 100%)'
           }}
         >
@@ -133,20 +138,32 @@ class Index extends PureComponent {
           </div>
         </section>
 
-        <section className="py-5" >
+        <section className='py-5'>
           <div className="container">
             <h1 className="text-center mb-4 fw-bold">Top Brands</h1>
-            <div className="row g-4 justify-content-center">
 
-              {brands.map((brand) => (
-                <div className="col-4 d-flex justify-content-center">
-                  <BrandCard brand={brand} />
-                </div>
+            <Swiper
+              slidesPerView={3}
+              spaceBetween={30}
+              pagination={{
+                clickable: true,
+              }}
+              modules={[Pagination]}
+              className="mySwiper pb-5"
+            >
+              {brands.map((brand, index) => (
+                <SwiperSlide key={index}>
+                  <div className="d-flex justify-content-center">
+                    <BrandCard brand={brand} />
+                  </div>
+                </SwiperSlide>
               ))}
 
-            </div>
-          </div>
+              <div className="swiper-pagination mt-3"></div>
+            </Swiper >
+          </div >
         </section>
+
 
         {/* //Services */}
         < section className='py-5' style={{ backgroundColor: '#f9fafb' }

@@ -7,24 +7,16 @@ class Profile extends PureComponent {
     handleBack = () => {
         window.history.back();
     };
-    constructor(props) {
-        super(props)
-
-        this.state = {
-
-        }
-    }
     render() {
         return (
             <>
-                <div className="mb-3 border border-dark p-fixed-top bg-warning py-1">
+                <div className="mb-3 border border-dark sticky-top bg-warning p-1">
                     <button
                         onClick={this.handleBack}
-                        className="btn btn-link text-dark d-flex align-items-center text-decoration-none fs-3  w-100 "
+                        className="btn btn-link text-dark d-flex align-items-center text-decoration-none fs-3 w-100 "
                     >
                         <i className="ri-arrow-left-line fs-3 me-2"></i> My Account
                     </button>
-
                 </div>
 
                 <div className="container ">
@@ -49,31 +41,40 @@ class Profile extends PureComponent {
                             </Link>
                         </div>
                     </div>
+                    <div className="d-flex flex-column gap-3 justify-content-center align-items-center py-2">
 
-                    <div className="d-flex row text-center justify-content-evenly align-itmes-center">
-
-                        <div className="col-4 col-sm-4">
-                            <div className="card rounded-4 cursor-pointer h-100 p-2 bg-warning">
-                                <i className="ri-shopping-basket-2-fill fs-2"></i>
-                                <h5 className="fw-bold mt-2">Your Orders</h5>
+                        <div className="card border-none rounded-4 cursor-pointer p-2 w-100 ">
+                            <div className="d-flex align-items-center justify-content-between">
+                                <div className="d-flex align-items-center gap-3">
+                                    <i className="ri-shopping-basket-2-fill fs-2 text-warning"></i>
+                                    <h5 className="fw-semibold mb-0">Your Orders</h5>
+                                </div>
+                                <i className="ri-arrow-right-s-line fs-4 text-muted"></i>
                             </div>
                         </div>
 
-                        <div className="col-4">
-                            <div className="card rounded-4 cursor-pointer h-100 p-2 bg-light">
-                                <i className="ri-settings-5-fill fs-2"></i>
-                                <h5 className="fw-bold mt-2">Settings</h5>
+                        <div className="card border-none rounded-4 cursor-pointer p-2 w-100 ">
+                            <div className="d-flex align-items-center justify-content-between">
+                                <div className="d-flex align-items-center gap-3">
+                                    <i className="ri-settings-5-fill fs-2 text-dark"></i>
+                                    <h5 className="fw-semibold mb-0">Settings</h5>
+                                </div>
+                                <i className="ri-arrow-right-s-line fs-4 text-muted"></i>
                             </div>
                         </div>
 
-                        <div className="col-4">
-                            <div className="card rounded-4 cursor-pointer h-100 p-2 bg-warning">
-                                <i className="ri-wallet-fill fs-2"></i>
-                                <h5 className="fw-bold mt-2">Your Wallet</h5>
+                        <div className="card border-none rounded-4 cursor-pointer p-2 w-100 ">
+                            <div className="d-flex align-items-center justify-content-between">
+                                <div className="d-flex align-items-center gap-3">
+                                    <i className="ri-wallet-fill fs-2 text-success"></i>
+                                    <h5 className="fw-semibold mb-0">Your Wallet</h5>
+                                </div>
+                                <i className="ri-arrow-right-s-line fs-4 text-muted"></i>
                             </div>
                         </div>
 
                     </div>
+
                 </div>
             </>
         )

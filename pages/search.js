@@ -14,16 +14,14 @@ class SearchPage extends PureComponent {
     render() {
         return (
             <>
-                <section className="bg-white text-black p-2 position-sticky border-bottom">
-                    <div className="d-flex align-items-center bg-dark-subtle rounded-4 border border-dark">
-                        <button
-                            onClick={this.handleBack}
-                            className="btn btn-link text-dark d-flex align-items-center justify-content-center text-decoration-none fs-5 px-2"
-                        >
-                            <i className="ri-arrow-left-line fs-4"></i>
-                        </button>
-                        <input type="text" placeholder="Search your vehicle"
-                            className="form-control border-0 bg-transparent text-dark ms-2 rounded-4"
+                <section className="d-flex align-items-center gap-2 bg-white text-black p-2 position-sticky top-0 border-bottom">
+                    <div className="d-flex align-items-center flex-grow-1 bg-dark-subtle rounded-4 px-3 py-2">
+                        <i className="ri-search-line text-secondary me-2"></i>
+                        <input
+                            type="search"
+                            placeholder="Search your vehicle"
+                            className="border-0 bg-transparent text-dark w-100 outline-0 "
+                            style={{ outline: 'none' }}
                         />
                     </div>
                 </section>

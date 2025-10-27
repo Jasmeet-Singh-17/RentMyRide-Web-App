@@ -14,18 +14,12 @@ class Explore extends PureComponent {
     handleSearchClick = () => {
         window.location.href = "/search";
     };
-    constructor(props) {
-        super(props)
 
-        this.state = {
-
-        }
-    }
 
     render() {
         return (
             <>
-                <section className="text-center bg-warning text-black p-2 sticky ">
+                <section className="text-center bg-warning text-black p-2 sticky-top">
                     <div>
                         <div className="d-flex align-items-center justify-content-between flex-wrap">
                             <button
@@ -53,8 +47,10 @@ class Explore extends PureComponent {
                                     tabIndex={-1}
                                     id="offcanvasBottom"
                                     aria-labelledby="offcanvasBottomLabel"
+                                    style={{ height: '45vh', maxHeight: '80vh' }}
+
                                 >
-                                    <div className="offcanvas-header">
+                                    <div className="offcanvas-header border-bottom">
                                         <h5 className="offcanvas-title" id="offcanvasBottomLabel">
                                             Apply Filters
                                         </h5>
@@ -65,39 +61,46 @@ class Explore extends PureComponent {
                                             aria-label="Close"
                                         />
                                     </div>
-                                    <div className="offcanvas-body small">
-                                        <div className="d-flex gap-3 justify-content-center flex-wrap">
-                                            <select className="form-select w-auto" aria-label="Vehicle">
-                                                <option selected>Vehicles</option>
+                                    <div className="offcanvas-body">
+                                        <div className="d-flex flex-column gap-3">
+                                            <select className="form-select form-select-lg" aria-label="Vehicle">
+                                                <option value="">All Vehicles</option>
                                                 <option value="1">Cars</option>
                                                 <option value="2">Bikes</option>
                                                 <option value="3">Scooters</option>
                                             </select>
 
-                                            <select className="form-select w-auto" aria-label="Rate">
-                                                <option selected>By Rate</option>
+                                            <select className="form-select form-select-lg" aria-label="Rate">
+                                                <option value="">Any Price</option>
                                                 <option value="1">1000 - 3000</option>
                                                 <option value="2">3000 - 5000</option>
                                                 <option value="3">5000 - 10000</option>
                                             </select>
 
-                                            <select className="form-select w-auto" aria-label="Fuel Type">
-                                                <option selected>Fuel Type</option>
+                                            <select className="form-select form-select-lg" aria-label="Fuel Type">
+                                                <option value="">All Fuel Types</option>
                                                 <option value="1">Petrol</option>
                                                 <option value="2">Diesel</option>
                                                 <option value="3">CNG</option>
                                                 <option value="4">EV</option>
                                             </select>
-
+                                        </div>
+                                        <div className='d-flex m-3 gap-2'>
+                                            <button className='btn btn-outline-secondary w-50' data-bs-dismiss="offcanvas"
+                                            >
+                                                Clear All
+                                            </button>
+                                            <button className='btn btn-primary w-50'>
+                                                Apply Filters
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
 
                             </div>
                         </div>
-                    </div>
-                </section>
-
+                    </div >
+                </section >
 
                 <section className="container mt-4 mb-5">
                     <h1 className="text-dark text-center fs-4 d-md-none mb-2">

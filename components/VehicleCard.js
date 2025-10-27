@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Image from "next/image";
 
 const VehicleCard = ({ vehicles }) => {
     const [selectedVehicle, setSelectedVehicle] = useState(null);
@@ -15,7 +14,7 @@ const VehicleCard = ({ vehicles }) => {
     return (
         <>
             {/* Vehicle Cards */}
-            <div className="container my-4">
+            <div className="container my-5">
                 <div className="row g-3">
                     {vehicles.map((v) => (
                         <div
@@ -25,13 +24,12 @@ const VehicleCard = ({ vehicles }) => {
                             style={{ cursor: "pointer" }}
                         >
                             <div className="card rounded-4">
-                                <div className="card-body d-flex align-items-center justify-content-between ">
+                                <div className="card-body d-flex align-items-center justify-content-between">
                                     <div className="d-flex justify-content-center gap-3">
-                                        <Image
+                                        <img
                                             src={v.src}
                                             alt={v.name}
                                             width={50}
-                                            height={50}
                                             className="rounded-circle"
                                         />
                                         <div>
@@ -49,28 +47,58 @@ const VehicleCard = ({ vehicles }) => {
                 </div>
             </div>
 
-            {/* Modal */}
+            {/* Simple Modal */}
             {selectedVehicle && (
                 <div
-                    className="modal show fade d-block"
-                    style={{ backgroundColor: "rgba(0,0,0,0.5)" }}
+                    className="modal show d-block"
+                    style={{ backgroundColor: "rgba(0, 0, 0, 0.5)" }}
+                    onClick={closeModal}
                 >
                     <div className="modal-dialog modal-dialog-centered">
                         <div className="modal-content rounded-4">
                             <div className="modal-header">
-                                <h5 className="modal-title">{selectedVehicle.name}</h5>
+                                <h5 className="modal-title fw-bold">{selectedVehicle.name}</h5>
                                 <button type="button" className="btn-close" onClick={closeModal}></button>
                             </div>
                             <div className="modal-body">
-                                <p><strong>Type:</strong> {selectedVehicle.type}</p>
-                                <p><strong>Fuel:</strong> {selectedVehicle.fuel}</p>
-                                <p><strong>Seats:</strong> {selectedVehicle.seats}</p>
-                                <p><strong>Rate:</strong> {selectedVehicle.rate}</p>
-                                <p><strong>Location:</strong> {selectedVehicle.location}</p>
+                                <div className="text-center mb-3">
+                                    <img
+                                        src={selectedVehicle.src}
+                                        alt={selectedVehicle.name}
+                                        className="img-fluid rounded"
+                                        style={{ maxHeight: "200px" }}
+                                    />
+                                </div>
+
+                                <div className="px-2">
+                                    <div className="d-flex justify-content-between py-2">
+                                        <span className="fw-semibold text-secondary">Type:</span>
+                                        <span>{selectedVehicle.type}</span>
+                                    </div>
+
+                                    <div className="d-flex justify-content-between py-2">
+                                        <span className="fw-semibold text-secondary">Fuel:</span>
+                                        <span>{selectedVehicle.fuel}</span>
+                                    </div>
+
+                                    <div className="d-flex justify-content-between py-2">
+                                        <span className="fw-semibold text-secondary">Seats:</span>
+                                        <span>{selectedVehicle.seats}</span>
+                                    </div>
+
+                                    <div className="d-flex justify-content-between py-2">
+                                        <span className="fw-semibold text-secondary">Location:</span>
+                                        <span>{selectedVehicle.location}</span>
+                                    </div>
+
+                                    <div className="d-flex justify-content-between py-2">
+                                        <span className="fw-semibold text-secondary">Rate:</span>
+                                        <span className="text-warning fw-bold">{selectedVehicle.rate}</span>
+                                    </div>
+                                </div>
                             </div>
                             <div className="modal-footer">
-                                <button className="btn btn-secondary" onClick={closeModal}>Close</button>
-                                <button className="btn btn-warning text-dark">Rent Now</button>
+                                <button className="btn btn-warning w-100">Rent Now</button>
                             </div>
                         </div>
                     </div>

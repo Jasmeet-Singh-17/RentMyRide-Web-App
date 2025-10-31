@@ -1,11 +1,14 @@
 "use client";
 import React, { useState } from "react";
+import { useRouter } from "next/navigation";
 import { ListFilter, Search as SearchIcon } from "lucide-react";
 import VehicleCard from "@/components/VehicleCard";
 import vehicles from "@/data/VehicleData";
 import Footer from "@/components/Footer";
 
 const Explore = () => {
+    const router = useRouter()
+
     const [activeFilter, setActiveFilter] = useState("vehicle");
 
     const setFilter = (e) => {
@@ -13,11 +16,11 @@ const Explore = () => {
     };
 
     const handleBack = () => {
-        window.history.back();
+        router.push('/index')
     };
 
     const handleSearchClick = () => {
-        window.location.href = "/search";
+        router.push("/search");
     };
 
     return (
@@ -262,7 +265,7 @@ const Explore = () => {
                 </h5>
 
                 <div className="row cols-1 g-3">
-                    <VehicleCard vehicles={vehicles} />
+                    <VehicleCard />
                 </div>
             </section>
 

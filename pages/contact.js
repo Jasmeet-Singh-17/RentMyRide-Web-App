@@ -1,15 +1,17 @@
-import React, { PureComponent } from 'react';
-import Footer from '@/components/Footer';
+import React from 'react';
+import { useRouter } from 'next/navigation';
 
 const Contact = () => {
-    handleBack = () => {
-        window.history.back();
+    const router = useRouter();
+
+    const handleBack = () => {
+        router.push('/')
     };
     return (
         <>
             <div className="mb-3 border border-dark sticky-top bg-warning p-1">
                 <button
-                    onClick={this.handleBack}
+                    onClick={handleBack}
                     className="btn btn-link text-dark d-flex align-items-center text-decoration-none fs-3 w-100 "
                 >
                     <i className="ri-arrow-left-line fs-3 me-2"></i> Help
@@ -19,12 +21,11 @@ const Contact = () => {
 
             <div className="container my-5">
                 <div
-                    className="card shadow-lg border-0 rounded-4 mx-auto p-4 p-md-5"
+                    className="rounded-4 card border-0 mx-auto p-4 p-md-5"
                     style={{
                         maxWidth: '700px',
-                        backgroundColor: '#f8f9fa',
-                    }}
-                >
+                        backgroundColor: '#e5e5e5ff',
+                    }}>
                     <h2 className="text-center fw-bold text-warning mb-4">
                         Get in Touch
                     </h2>
@@ -37,7 +38,7 @@ const Contact = () => {
                                 <input
                                     type="text"
                                     id="name"
-                                    className="form-control rounded-3 border-warning"
+                                    className="w-100 rounded-3 border border-warning p-2"
                                     placeholder="Enter your full name"
                                     required
                                 />
@@ -50,7 +51,7 @@ const Contact = () => {
                                 <input
                                     type="email"
                                     id="email"
-                                    className="form-control rounded-3 border-warning"
+                                    className="w-100 rounded-3 border border-warning p-2"
                                     placeholder="Enter your email"
                                     required
                                 />
@@ -63,28 +64,24 @@ const Contact = () => {
                                 <input
                                     type="text"
                                     id="phone"
-                                    className="form-control rounded-3 border-warning"
+                                    className="w-100 rounded-3 border border-warning p-2"
                                     placeholder="Enter your phone number"
                                 />
                             </div>
 
                             <div className="col-md-6">
-                                <label htmlFor="service" className="form-label fw-semibold">
+                                <label htmlFor="service" className="form-label fw-semibold "
+                                >
                                     Needed Service *
                                 </label>
-                                <select
+                                <input
+                                    type="text"
                                     id="service"
-                                    className="form-select rounded-3 border-warning"
-                                    required
-                                >
-                                    <option value="" disabled selected>
-                                        Select a service
-                                    </option>
-                                    <option value="rental">Vehicle Rental</option>
-                                    <option value="support">Customer Support</option>
-                                    <option value="partner">Partner With Us</option>
-                                    <option value="other">Other</option>
-                                </select>
+                                    className="w-100 rounded-3 border border-warning p-2"
+                                    placeholder="Service Needed"
+                                    style={{ outline: 'none' }}
+                                />
+
                             </div>
 
                             <div className="col-12">
@@ -94,24 +91,25 @@ const Contact = () => {
                                 <textarea
                                     id="message"
                                     rows="4"
-                                    className="form-control rounded-3 border-warning"
+                                    className="w-100 rounded-3 border border-warning p-2"
                                     placeholder="Your message here..."
                                     required
                                 ></textarea>
                             </div>
                         </div>
-
-                        <button
-                            type="submit"
-                            className="btn btn-warning w-100 mt-4 fw-semibold text-white rounded-3 py-2"
-                        >
-                            Send Message
-                        </button>
                     </form>
                 </div>
             </div>
+            <div className="fixed-bottom border-top border-dark p-3">
+                <button
+                    type="submit"
+                    className="btn btn-warning fw-semibold text-white w-100 rounded-3"
+                >
+                    Send Message
+                </button>
+            </div>
 
-            <Footer />
+
         </>
     );
 }

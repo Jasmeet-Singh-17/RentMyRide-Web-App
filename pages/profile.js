@@ -6,7 +6,7 @@ import { CircleUserRound } from 'lucide-react'
 export default function profile() {
     const router = useRouter();
     const handleBack = () => {
-        router.push('/index')
+        router.push('/')
     }
     return (
         <>
@@ -43,17 +43,17 @@ export default function profile() {
                 </div>
                 <div className="d-flex flex-column gap-3 justify-content-center align-items-center py-2">
 
-                    <div className="card border-none rounded-4 cursor-pointer p-2 w-100 ">
+                    <div className="card border-none rounded-3 cursor-pointer p-2 w-100 ">
                         <div className="d-flex align-items-center justify-content-between">
                             <div className="d-flex align-items-center gap-3">
-                                <i className="ri-shopping-basket-2-fill fs-2 text-warning"></i>
+                                <i className="ri-shopping-basket-2-fill fs-2 text-dark"></i>
                                 <h5 className="fw-semibold mb-0">Your Orders</h5>
                             </div>
                             <i className="ri-arrow-right-s-line fs-4 text-muted"></i>
                         </div>
                     </div>
 
-                    <div className="card border-none rounded-4 cursor-pointer p-2 w-100 ">
+                    <div className="card border-none rounded-3 cursor-pointer p-2 w-100 ">
                         <div className="d-flex align-items-center justify-content-between">
                             <div className="d-flex align-items-center gap-3">
                                 <i className="ri-settings-5-fill fs-2 text-dark"></i>
@@ -63,10 +63,10 @@ export default function profile() {
                         </div>
                     </div>
 
-                    <div className="card border-none rounded-4 cursor-pointer p-2 w-100 ">
+                    <div className="card border-none rounded-3 cursor-pointer p-2 w-100 ">
                         <div className="d-flex align-items-center justify-content-between">
                             <div className="d-flex align-items-center gap-3">
-                                <i className="ri-wallet-fill fs-2 text-success"></i>
+                                <i className="ri-wallet-fill fs-2 text-dark"></i>
                                 <h5 className="fw-semibold mb-0">Your Wallet</h5>
                             </div>
                             <i className="ri-arrow-right-s-line fs-4 text-muted"></i>

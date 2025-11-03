@@ -1,60 +1,64 @@
-import React from 'react';
-import { useRouter } from 'next/navigation';
+import React from "react";
+import Footer from "@/components/Footer";
 
 const SearchPage = () => {
-    const router = useRouter();
-    handleBack = () => {
-        router.push('/index')
-    };
+
+    // Sample Data
+    const recentSearches = [
+        { name: "Toyota Fortuner", type: "SUV", src: "/vehicles/1.jpeg" },
+        { name: "Honda City", type: "Sedan", src: "/vehicles/1.jpeg" },
+        { name: "Mahindra Thar", type: "SUV", src: "/vehicles/1.jpeg" },
+    ];
 
     return (
         <>
-            <section className="d-flex align-items-center gap-2 bg-white text-black p-2 position-sticky top-0 border-bottom">
-                <div className="d-flex align-items-center flex-grow-1 bg-dark-subtle rounded-4 px-3 py-2">
-                    <i className="ri-search-line text-secondary me-2"></i>
-                    <input
-                        type="search"
-                        placeholder="Search your vehicle"
-                        className="border-0 bg-transparent text-dark w-100 outline-0 "
-                        style={{ outline: 'none' }}
-                    />
-                </div>
+            {/* Search Bar */}
+            <section className="d-flex align-items-center gap-2 bg-white text-black p-2 position-sticky top-0 border-bottom"> <div className="d-flex align-items-center flex-grow-1 bg-dark-subtle rounded-3 px-3 py-2">
+                <i className="ri-search-line text-secondary me-2"></i>
+                <input type="search"
+                    placeholder="Search your vehicle"
+                    className="border-0 bg-transparent text-dark w-100 outline-0 "
+                    style={{ outline: 'none' }} />
+            </div>
             </section>
 
-            <section className="mt-2 pt-2 container">
+            {/* Content */}
+            <div className="container mt-2">
                 <div className="d-flex align-items-center my-2 ">
                     <div className="flex-grow-1 border-bottom border-2 ms-3"></div>
-                    <span className="fw-bold fs-5"> Recently Recented</span>
+                    <span className="text-secondary text-uppercase fw-semibold ms-3"> Recently Recented
+                    </span>
                     <div className="flex-grow-1 border-bottom border-2 ms-3"></div>
                 </div>
 
-                <div className="list-group  rounded-4">
-                    <div className="list-group-item d-flex justify-content-between align-items-center bg-light-subtle">
-                        <div>
-                            <h5 className="mb-1 text-dark">Toyota Fortuner</h5>
-                            <small className="text-muted">SUV • 7 Seater</small>
+                <section>
+                    <div className="row">
+                        <div className="col-md-6">
+                            {recentSearches.map((item) => (
+                                <div
+                                    className="d-flex align-items-center mb-4 px-2"
+                                    style={{ cursor: "pointer" }}
+                                >
+                                    <img
+                                        src={item.src}
+                                        alt={item.name}
+                                        width="70"
+                                        className="img-fluid me-3 rounded-circle"
+                                    />
+                                    <div>
+                                        <h5 className="mb-0">{item.name}</h5>
+                                        <small className="text-muted">{item.type}</small>
+                                    </div>
+                                </div>
+                            ))}
                         </div>
                     </div>
+                </section>
+            </div>
 
-                    <div className="list-group-item d-flex justify-content-between align-items-center bg-light">
-                        <div>
-                            <h5 className="mb-1 text-dark">Honda City</h5>
-                            <small className="text-muted">Sedan • 5 Seater</small>
-                        </div>
-
-                    </div>
-
-                    <div className="list-group-item d-flex justify-content-between align-items-center bg-light-subtle">
-                        <div>
-                            <h5 className="mb-1 text-dark">Jeep Compass</h5>
-                            <small className="text-muted">SUV • 5 Seater</small>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
+            <Footer />
         </>
     );
-}
+};
 
 export default SearchPage;

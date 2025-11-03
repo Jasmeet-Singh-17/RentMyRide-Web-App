@@ -10,7 +10,7 @@ const vehicles = [
         seats: 5,
         fuel: "Petrol",
         features: ["Air Conditioning", "Bluetooth", "Manual Transmission"],
-        src: "https://images.pexels.com/photos/1007410/pexels-photo-1007410.jpeg?auto=compress&cs=tinysrgb&w=800"
+        src: "/vehicles/1.jpeg"
     },
     {
         id: 2,
@@ -23,7 +23,7 @@ const vehicles = [
         seats: 2,
         fuel: "Petrol",
         features: ["Automatic", "Under-seat Storage"],
-        src: "https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&w=800"
+        src: "/vehicles/2.jpeg"
     },
     {
         id: 3,

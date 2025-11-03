@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import { Search } from 'lucide-react';
 import Link from 'next/link';
 
 const Footer = () => {
@@ -16,20 +15,20 @@ const Footer = () => {
                 <nav className="d-flex justify-content-around align-items-center d-md-none py-2">
                     <Link
                         href="/" className="nav-link text-center" onClick={() => changeColour("home")}>
-                        <i className="ri-home-4-fill fs-3"></i><br /> Home
+                        <i className="ri-home-4-line fs-3"></i><br /> Home
                     </Link>
 
                     <Link href="/search" className='nav-link text-center' onClick={() => { changeColour("search") }}>
-                        <Search className="text-muted" size={22} /><br /> Search
+                        <i className="ri-search-line fs-3"></i><br /> Search
                     </Link>
                     <Link href="/explore" className="nav-link text-center" onClick={() => { changeColour("explore") }}>
-                        <i className="ri-car-fill fs-3"></i> <br /> Explore
+                        <i className="ri-car-line fs-3"></i> <br /> Explore
                     </Link>
                     <Link href="/profile" className="nav-link text-center" onClick={() => { changeColour("profile") }}>
-                        <i className="ri-user-3-fill fs-3"></i> <br /> Profile
+                        <i className="ri-user-3-line fs-3"></i> <br /> Profile
                     </Link>
                     <Link href="/contact" className='nav-link text-center' onClick={() => { changeColour("help") }}>
-                        <i className="ri-customer-service-fill fs-3"></i><br /> Help
+                        <i className="ri-customer-service-line fs-3"></i><br /> Help
                     </Link>
                 </nav>
             </div>

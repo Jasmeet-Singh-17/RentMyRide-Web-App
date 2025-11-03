@@ -28,7 +28,7 @@ const Index = () => {
           <p className="text-dark fs-5 mb-4">
             Car sharing made simple, affordable, and reliable
           </p>
-          <button className="btn btn-dark btn-lg rounded-pill shadow px-5 py-3 btn-hover">
+          <button className="btn btn-dark rounded-pill px-5 py-3">
             <i className="ri-car-fill me-2"></i>
             Find Your Ride Now
           </button>
@@ -53,10 +53,10 @@ const Index = () => {
           <h1 className='text-center mb-5 fw-bold mt-3'>Features That Make Us Unique</h1>
           <div className="row g-4">
 
-            <div className="col-md-6 col-lg-4">
-              <div className="card h-100 rounded-4 p-4" style={{ background: 'linear-gradient(135deg, #ffffff, #f2f2f2)', cursor: 'pointer' }}>
+            <div className="col-6 col-md-6 col-lg-4">
+              <div className="card rounded-4 p-1" style={{ background: 'linear-gradient(-40deg, #ffffff, #e6e6e6)', cursor: 'pointer' }}>
                 <div className="card-body text-center">
-                  <i className="ri-car-fill fs-1 text-dark mb-3"></i>
+                  <i className="ri-car-line fs-1 text-dark "></i>
                   <h5 className="card-title fw-bold">User-Friendly Booking</h5>
                   <p className="card-text">
                     Book vehicles instantly, choose multiple types, and enjoy flexible durations.
@@ -65,11 +65,11 @@ const Index = () => {
               </div>
             </div>
 
-            <div className="col-md-6 col-lg-4">
-              <div className="card h-100 rounded-4 p-4" style={{ background: 'linear-gradient(135deg, #ffffff, #f0f0f0)', cursor: 'pointer' }}>
+            <div className="col-6 col-md-6 col-lg-4">
+              <div className="card rounded-4 p-1" style={{ background: 'linear-gradient(-40deg, #ffffff, #e6e6e6)', cursor: 'pointer' }}>
                 <div className="card-body text-center">
-                  <i className="ri-user-3-fill fs-1 text-dark mb-3"></i>
-                  <h5 className="card-title fw-bold">Direct Owner Contact</h5>
+                  <i className="ri-user-3-line fs-1 text-dark"></i>
+                  <h5 className="card-title fw-bold">Direct Contact</h5>
                   <p className="card-text">
                     Connect directly with vehicle owners for transparent bookings and hassle-free communication.
                   </p>
@@ -77,10 +77,10 @@ const Index = () => {
               </div>
             </div>
 
-            <div className="col-md-6 col-lg-4">
-              <div className="card h-100 rounded-4 p-4 " style={{ background: 'linear-gradient(135deg, #ffffff, #f0f0f0)', cursor: 'pointer' }}>
+            <div className="col-6 col-md-6 col-lg-4">
+              <div className="card rounded-4 p-1" style={{ background: 'linear-gradient(-40deg, #ffffff, #e6e6e6)', cursor: 'pointer' }}>
                 <div className="card-body text-center">
-                  <i className="ri-map-pin-2-fill fs-1 text-dark mb-3"></i>
+                  <i className="ri-map-pin-2-line fs-1 text-dark mb-3"></i>
                   <h5 className="card-title fw-bold">Convenience Features</h5>
                   <p className="card-text">
                     Find nearby vehicles, manage pick-up/drop-off, and save favorites for quick access.
@@ -89,11 +89,11 @@ const Index = () => {
               </div>
             </div>
 
-            <div className="col-md-6 col-lg-4">
-              <div className="card h-100 rounded-4 p-4 " style={{ background: 'linear-gradient(135deg, #ffffff, #f9f9f9)', cursor: 'pointer' }}>
+            <div className="col-6 col-md-6 col-lg-4">
+              <div className="card rounded-4 p-1" style={{ background: 'linear-gradient(-40deg, #ffffff, #e6e6e6)', cursor: 'pointer' }}>
                 <div className="card-body text-center">
-                  <i className="ri-dashboard-fill fs-1 text-dark mb-3"></i>
-                  <h5 className="card-title fw-bold">Admin / Owner Features</h5>
+                  <i className="ri-dashboard-line fs-1 text-dark mb-3"></i>
+                  <h5 className="card-title fw-bold">Admin  Features</h5>
                   <p className="card-text">
                     Manage vehicles, bookings, pricing, and track statistics easily from the dashboard.
                   </p>
@@ -101,8 +101,8 @@ const Index = () => {
               </div>
             </div>
 
-            <div className="col-md-6 col-lg-4">
-              <div className="card h-100 rounded-4 p-4 " style={{ background: 'linear-gradient(135deg, #ffffff, #f4f4f4)', cursor: 'pointer' }}>
+            <div className="col-6 col-md-6 col-lg-4">
+              <div className="card rounded-4 p-1" style={{ background: 'linear-gradient(-40deg, #ffffff, #e6e6e6)', cursor: 'pointer' }}>
                 <div className="card-body text-center">
                   <i className="ri-customer-service-2-line fs-1 text-dark mb-3"></i>
                   <h5 className="card-title fw-bold">24/7 Customer Support</h5>
@@ -113,8 +113,8 @@ const Index = () => {
               </div>
             </div>
 
-            <div className="col-md-6 col-lg-4">
-              <div className="card h-100 rounded-4 p-4" style={{ background: 'linear-gradient(135deg, #ffffff, #e6e6e6)', cursor: 'pointer' }}>
+            <div className="col-6 col-md-6 col-lg-4">
+              <div className="card rounded-4 p-1" style={{ background: 'linear-gradient(-40deg, #ffffff, #e6e6e6)', cursor: 'pointer' }}>
                 <div className="card-body text-center ">
                   <i className="ri-discount-percent-line fs-1 text-dark mb-3"></i>
                   <h5 className="card-title fw-bold">Huge Discounts</h5>
@@ -131,7 +131,7 @@ const Index = () => {
 
       <section className='py-5'>
         <div className="container">
-          <h1 className="text-center mb-4 fw-bold">Top Brands</h1>
+          <h1 className="text-center mb-2 fw-bold">Top Brands</h1>
 
           <Swiper
             slidesPerView={3}
@@ -140,7 +140,7 @@ const Index = () => {
               clickable: true,
             }}
             modules={[Pagination]}
-            className="mySwiper pb-5"
+            className="pb-5"
           >
             {brands.map((brand, index) => (
               <SwiperSlide key={index}>
@@ -150,92 +150,105 @@ const Index = () => {
               </SwiperSlide>
             ))}
 
-            <div className="swiper-pagination mt-3"></div>
+            <div className="swiper-pagination"></div>
           </Swiper >
         </div >
       </section>
 
 
       {/* //Services */}
-      < section className='py-5' style={{ backgroundColor: '#f9fafb' }
-      }>
-        <div className="container">
-          <h1 className='text-center mb-4 fw-bold'>Our Services</h1>
-          <div className="row g-4">
+      <section className="py-2 container">
+        <h1 className="text-center mb-4 fw-bold">Our Services</h1>
+        <div className="row g-4">
 
-            <div className="col-md-6 col-lg-4">
-              <div className="service-card h-100 p-4 text-center ">
+          <div className="col-6 col-md-6 col-lg-4">
+            <div className="card rounded-4 p-1" style={{ cursor: "pointer" }}>
+              <div className="card-body text-center">
                 <div className="icon-circle mb-3">
                   <i className="ri-roadster-fill fs-1 text-white"></i>
                 </div>
-                <h5 className="fw-bold">Core Rental Services</h5>
-                <p>
-                  Rent cars, bikes, and scooters instantly with flexible hourly, daily, or weekly options.
+                <h5 className="card-title fw-bold">Core Rental Services</h5>
+                <p className="card-text">
+                  Rent cars, bikes, and scooters instantly with flexible hourly,
+                  daily.
                 </p>
               </div>
             </div>
+          </div>
 
-            <div className="col-md-6 col-lg-4">
-              <div className="service-card h-100 p-4 text-center ">
-                <div className="icon-circle mb-3" style={{ backgroundColor: '#28a745' }}>
+          <div className="col-6 col-md-6 col-lg-4">
+            <div className="card rounded-4 p-1">
+              <div className="card-body text-center">
+                <div className="icon-circle mb-3" style={{ backgroundColor: "#28a745" }}>
                   <i className="ri-map-pin-2-fill fs-1 text-white"></i>
                 </div>
-                <h5 className="fw-bold">Dedicated Pick-Up Center</h5>
-                <p>
-                  Convenient pick-up and drop-off points for quick and hassle-free rentals.
+                <h5 className="card-title fw-bold">Dedicated Pick-Up Center</h5>
+                <p className="card-text">
+                  Convenient pick-up and drop-off points for quick and hassle-free
+                  rentals.
                 </p>
               </div>
             </div>
+          </div>
 
-            <div className="col-md-6 col-lg-4">
-              <div className="service-card h-100 p-4 text-center ">
-                <div className="icon-circle mb-3" style={{ backgroundColor: '#007bff' }}>
+          <div className="col-6 col-md-6 col-lg-4">
+            <div className="card rounded-4 p-1">
+              <div className="card-body text-center">
+                <div className="icon-circle mb-3" style={{ backgroundColor: "#007bff" }}>
                   <i className="ri-smartphone-fill fs-1 text-white"></i>
                 </div>
-                <h5 className="fw-bold">Tech & Mobile Services</h5>
-                <p>
-                  Real-time vehicle availability, GPS tracking, and mobile app integration for easy booking.
+                <h5 className="card-title fw-bold">Tech & Mobile Services</h5>
+                <p className="card-text">
+                  Real-time vehicle availability, GPS tracking, and mobile app
+                  integration for easy booking.
                 </p>
               </div>
             </div>
+          </div>
 
-            <div className="col-md-6 col-lg-4">
-              <div className="service-card h-100 p-4 text-center">
-                <div className="icon-circle mb-3" style={{ backgroundColor: '#ffc107' }}>
+          <div className="col-6 col-md-6 col-lg-4">
+            <div className="card rounded-4 p-1">
+              <div className="card-body text-center">
+                <div className="icon-circle mb-3" style={{ backgroundColor: "#ffc107" }}>
                   <i className="ri-shield-check-fill fs-1 text-white"></i>
                 </div>
-                <h5 className="fw-bold">Safety & Trust</h5>
-                <p>
-                  Verified users, insurance coverage, and transparent bookings for complete peace of mind.
+                <h5 className="card-title fw-bold">Safety & Trust</h5>
+                <p className="card-text">
+                  Verified users, insurance coverage, and transparent bookings for
+                  complete peace of mind.
                 </p>
               </div>
             </div>
+          </div>
 
-            <div className="col-md-6 col-lg-4">
-              <div className="service-card h-100 p-4 text-center">
-                <div className="icon-circle mb-3" style={{ backgroundColor: '#17a2b8' }}>
+          <div className="col-6 col-md-6 col-lg-4">
+            <div className="card rounded-4 p-1">
+              <div className="card-body text-center">
+                <div className="icon-circle mb-3" style={{ backgroundColor: "#17a2b8" }}>
                   <i className="ri-customer-service-2-line fs-1 text-white"></i>
                 </div>
-                <h5 className="fw-bold">24/7 Customer Support</h5>
-                <p>
-                  Get help anytime with our responsive support team, available around the clock.
+                <h5 className="card-title fw-bold">24/7 Support</h5>
+                <p className="card-text pb-4">
+                  Get help anytime with our responsive support team.
                 </p>
               </div>
             </div>
+          </div>
 
-            <div className="col-md-6 col-lg-4">
-              <div className="service-card h-100 p-4 text-center ">
-                <div className="icon-circle mb-3" style={{ backgroundColor: '#6c757d' }}>
+          <div className="col-6 col-md-6 col-lg-4">
+            <div className="card rounded-4 p-1">
+              <div className="card-body text-center">
+                <div className="icon-circle mb-3" style={{ backgroundColor: "#6c757d" }}>
                   <i className="ri-secure-payment-fill fs-1 text-white"></i>
                 </div>
-                <h5 className="fw-bold">Safe Payment</h5>
-                <p>
-                  Secure online payments with multiple options including cards, UPI, and wallets.
+                <h5 className="card-title fw-bold">Safe Payment</h5>
+                <p className="card-text">
+                  Secure online payments with options like cards, UPI.
                 </p>
               </div>
             </div>
-
           </div>
+
         </div>
       </section >
 

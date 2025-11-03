@@ -4,10 +4,11 @@ import Link from 'next/link';
 const NavbarWrapper = () => {
     return (
         <>
-            <nav className="navbar fixed-top navbar-light bg-warning border-bottom d-flex d-md-none justify-content-center">
+            <nav className="navbar fixed-top navbar-light bg-warning border-bottom d-flex d-md-none justify-content-evenly">
                 <Link href="/" className="navbar-brand text-dark fw-bold fs-4">
                     RentMyRide <i className="ri-riding-fill"></i>
                 </Link>
+
             </nav>
 
             <nav className="navbar navbar-expand-md navbar-light bg-warning d-flex justify-content-center">

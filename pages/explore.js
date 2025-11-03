@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { useRouter } from "next/navigation";
-import { ListFilter, Search as SearchIcon } from "lucide-react";
+import { Search as SearchIcon } from "lucide-react";
 import VehicleCard from "@/components/VehicleCard";
 import vehicles from "@/data/VehicleData";
 import Footer from "@/components/Footer";
@@ -16,7 +16,7 @@ const Explore = () => {
     };
 
     const handleBack = () => {
-        router.push('/index')
+        router.push('/')
     };
 
     const handleSearchClick = () => {
@@ -31,7 +31,7 @@ const Explore = () => {
                         onClick={handleBack}
                         className="btn btn-link text-dark d-flex align-items-center text-decoration-none fs-5 bg-warning"
                     >
-                        <i className="ri-arrow-left-line fs-4 me-2"></i>
+                        <i className="ri-arrow-left-line fs-3 me-2"></i>
                         Explore
                     </button>
 
@@ -43,7 +43,6 @@ const Explore = () => {
                             <SearchIcon size={28} className="cursor-pointer" />
                         </button>
 
-                        {/* Filter Button */}
                         <button
                             className="btn btn-dark"
                             type="button"
@@ -51,7 +50,7 @@ const Explore = () => {
                             data-bs-target="#offcanvasBottom"
                             aria-controls="offcanvasBottom"
                         >
-                            <ListFilter size={24} />
+                            <i class="ri-filter-line"></i>
                         </button>
 
                         {/* Offcanvas Filter Panel */}

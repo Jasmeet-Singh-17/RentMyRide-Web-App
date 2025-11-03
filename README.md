@@ -365,33 +365,11 @@ Contributions are welcome! Please follow these steps:
 
 ---
 
-## 🎯 Quick Start Guide
-
-1. ✅ Clone the repo
-2. ✅ Run `npm install`
-3. ✅ Run `npm run dev`
-4. ✅ Start coding! 🚀
-
----
-
-## 📚 Documentation
-
-For more detailed documentation, visit:
-- 📖 [Next.js Docs](https://nextjs.org/docs)
-- 📖 [Bootstrap Docs](https://getbootstrap.com/docs)
-- 📖 [Swiper Docs](https://swiperjs.com/react)
-
----
 
 <div align="center">
 
 ### 💖 Built with Love by RentMyRide Team
 
-**⭐ Star this repo if you find it helpful!**
 
-[![GitHub stars](https://img.shields.io/github/stars/yourusername/rentmyride?style=social)](https://github.com/yourusername/rentmyride)
-[![GitHub forks](https://img.shields.io/github/forks/yourusername/rentmyride?style=social)](https://github.com/yourusername/rentmyride)
-
-[🌐 Website](https://rentmyride.com) • [📧 Email](mailto:support@rentmyride.com) • [🐦 Twitter](https://twitter.com/rentmyride)
 
 </div>

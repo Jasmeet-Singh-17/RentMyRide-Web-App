@@ -5,12 +5,39 @@ import Footer from "@/components/Footer";
 export default function Vehicle() {
     const router = useRouter();
     const { id } = router.query;
-    const vehicle = vehicles.find(v => v.id === Number(id));
+
+    // Safely find vehicle only when `id` exists
+    const vehicle = id ? vehicles.find((v) => v.id === Number(id)) : null;
 
     const handleBack = () => {
-        router.push('/explore');
+        router.push("/explore");
     };
 
+    // ✅ Guard against undefined vehicle (this fixes the build/prerender error)
+    if (!vehicle) {
+        return (
+            <>
+                <section>
+                    <div className="mb-3 border border-dark sticky-top bg-warning p-1 shadow-sm">
+                        <button
+                            onClick={handleBack}
+                            className="btn btn-link text-dark d-flex align-items-center text-decoration-none fs-3 w-100"
+                        >
+                            <i className="ri-arrow-left-line fs-3 me-2"></i> Back
+                        </button>
+                    </div>
+                </section>
+
+                <section className="container my-5">
+                    <p className="fs-5 mb-0">
+                        Vehicle not found or still loading.
+                    </p>
+                </section>
+
+                <Footer />
+            </>
+        );
+    }
 
     return (
         <>
@@ -58,7 +85,11 @@ export default function Vehicle() {
                     <div className="col-6">
                         <div className="card text-center p-3 shadow-sm h-100">
                             <i className="ri-money-rupee-circle-fill fs-2 text-warning mb-2"></i>
-                            <h5 className="mb-0">{vehicle.currency}{vehicle.rate}{vehicle.rateUnit}</h5>
+                            <h5 className="mb-0">
+                                {vehicle.currency}
+                                {vehicle.rate}
+                                {vehicle.rateUnit}
+                            </h5>
                             <small className="text-muted">Per Day</small>
                         </div>
                     </div>
@@ -101,7 +132,7 @@ export default function Vehicle() {
                 <div className="card">
                     <div className="card-body">
                         <div className="row g-2">
-                            {vehicle.features.map((feature, index) => (
+                            {vehicle.features?.map((feature, index) => (
                                 <div key={index} className="col-12">
                                     <div className="d-flex align-items-center p-2">
                                         <i className="ri-check-double-line text-success fs-5 me-3"></i>

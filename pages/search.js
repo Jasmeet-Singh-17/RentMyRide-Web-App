@@ -3,11 +3,10 @@ import Footer from "@/components/Footer";
 
 const SearchPage = () => {
 
-    // Sample Data
     const recentSearches = [
-        { name: "Toyota Fortuner", type: "SUV", src: "/vehicles/1.jpeg" },
-        { name: "Honda City", type: "Sedan", src: "/vehicles/1.jpeg" },
-        { name: "Mahindra Thar", type: "SUV", src: "/vehicles/1.jpeg" },
+        { name: "Toyota Fortuner", type: "SUV", src: "https://images.pexels.com/photos/358070/pexels-photo-358070.jpeg?auto=compress&cs=tinysrgb&w=800" },
+        { name: "Honda City", type: "Sedan", src: "https://images.pexels.com/photos/358070/pexels-photo-358070.jpeg?auto=compress&cs=tinysrgb&w=800" },
+        { name: "Mahindra Thar", type: "SUV", src: "https://images.pexels.com/photos/358070/pexels-photo-358070.jpeg?auto=compress&cs=tinysrgb&w=800" },
     ];
 
     return (

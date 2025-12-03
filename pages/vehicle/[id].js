@@ -13,7 +13,6 @@ export default function Vehicle() {
         router.push("/explore");
     };
 
-    // ✅ Guard against undefined vehicle (this fixes the build/prerender error)
     if (!vehicle) {
         return (
             <>
